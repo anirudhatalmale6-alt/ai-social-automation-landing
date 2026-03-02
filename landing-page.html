@@ -3,76 +3,73 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>AutoReply AI — Instant Social Media Automation for Every Business</title>
-<meta name="description" content="AutoReply AI automatically responds to comments, messages, enquiries, and reviews across Facebook, Instagram, YouTube, X, Google My Business and more. Never miss a lead again.">
-<meta name="keywords" content="AI social media automation, auto reply bot, social media chatbot, comment automation, review management">
+<title>Social Clouds — AI-Powered Social Media Automation | Auto-Reply to Comments, DMs & Reviews</title>
+<meta name="description" content="Social Clouds automatically responds to comments, messages, enquiries, and reviews across Facebook, Instagram, YouTube, X, Google My Business and more. Never miss a lead again.">
+<meta name="keywords" content="AI social media automation, auto reply bot, social media chatbot, comment automation, review management, Social Clouds">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,700;1,9..40,400&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet">
 <style>
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
-  --navy: #0a0e1a;
-  --navy-light: #111827;
-  --navy-mid: #1a2332;
-  --surface: #0d1321;
-  --surface-raised: #151d2e;
-  --surface-hover: #1c2640;
-  --blue: #3b82f6;
-  --blue-bright: #60a5fa;
-  --teal: #06d6a0;
-  --teal-dim: rgba(6, 214, 160, 0.15);
-  --cta: #ef4444;
-  --cta-hover: #dc2626;
-  --cta-glow: rgba(239, 68, 68, 0.25);
-  --white: #f8fafc;
-  --gray-100: #e2e8f0;
-  --gray-200: #cbd5e1;
-  --gray-300: #94a3b8;
-  --gray-400: #64748b;
-  --gray-500: #475569;
-  --gold: #fbbf24;
-  --font-display: 'Space Grotesk', system-ui, sans-serif;
-  --font-body: 'DM Sans', system-ui, sans-serif;
-  --font-mono: 'JetBrains Mono', monospace;
+  --primary: #2563eb;
+  --primary-light: #3b82f6;
+  --primary-lighter: #93c5fd;
+  --primary-50: #eff6ff;
+  --primary-100: #dbeafe;
+  --primary-dark: #1d4ed8;
+  --accent: #06b6d4;
+  --accent-light: #22d3ee;
+  --green: #10b981;
+  --green-light: #d1fae5;
+  --orange: #f97316;
+  --orange-light: #fff7ed;
+  --red: #ef4444;
+  --purple: #8b5cf6;
+  --purple-light: #ede9fe;
+  --cta: #f97316;
+  --cta-hover: #ea580c;
+  --white: #ffffff;
+  --gray-50: #f8fafc;
+  --gray-100: #f1f5f9;
+  --gray-200: #e2e8f0;
+  --gray-300: #cbd5e1;
+  --gray-400: #94a3b8;
+  --gray-500: #64748b;
+  --gray-600: #475569;
+  --gray-700: #334155;
+  --gray-800: #1e293b;
+  --gray-900: #0f172a;
+  --font: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+  --shadow: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -2px rgba(0,0,0,0.05);
+  --shadow-md: 0 10px 25px -5px rgba(0,0,0,0.08), 0 8px 10px -6px rgba(0,0,0,0.04);
+  --shadow-lg: 0 20px 50px -12px rgba(0,0,0,0.12);
+  --shadow-blue: 0 10px 40px -10px rgba(37,99,235,0.25);
 }
 
 html { scroll-behavior: smooth; scroll-padding-top: 80px; }
 
 body {
-  font-family: var(--font-body);
-  background: var(--navy);
-  color: var(--gray-200);
+  font-family: var(--font);
+  background: var(--white);
+  color: var(--gray-700);
   line-height: 1.6;
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
 }
 
-/* ─── NOISE TEXTURE OVERLAY ─── */
-body::before {
-  content: '';
-  position: fixed;
-  inset: 0;
-  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");
-  pointer-events: none;
-  z-index: 9999;
-}
-
-/* ─── UTILITY ─── */
 .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-.section-pad { padding: 100px 0; }
+.section-pad { padding: 96px 0; }
 
-/* ─── REVEAL ANIMATIONS ─── */
+/* ─── ANIMATIONS ─── */
 .reveal {
   opacity: 0;
-  transform: translateY(40px);
-  transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+  transform: translateY(30px);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
 }
-.reveal.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
+.reveal.visible { opacity: 1; transform: translateY(0); }
 .reveal-delay-1 { transition-delay: 0.1s; }
 .reveal-delay-2 { transition-delay: 0.2s; }
 .reveal-delay-3 { transition-delay: 0.3s; }
@@ -82,70 +79,61 @@ body::before {
 /* ─── NAV ─── */
 .nav {
   position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
+  top: 0; left: 0; right: 0;
   z-index: 1000;
-  padding: 0 24px;
-  transition: background 0.3s, box-shadow 0.3s, backdrop-filter 0.3s;
+  background: rgba(255,255,255,0.92);
+  backdrop-filter: blur(16px);
+  border-bottom: 1px solid var(--gray-200);
+  transition: box-shadow 0.3s;
 }
-.nav.scrolled {
-  background: rgba(10, 14, 26, 0.85);
-  backdrop-filter: blur(20px);
-  box-shadow: 0 1px 0 rgba(255,255,255,0.05);
-}
+.nav.scrolled { box-shadow: var(--shadow); }
 .nav-inner {
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 24px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 72px;
+  height: 70px;
 }
 .nav-logo {
-  font-family: var(--font-display);
-  font-size: 1.35rem;
-  font-weight: 700;
-  color: var(--white);
-  text-decoration: none;
   display: flex;
   align-items: center;
   gap: 10px;
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.35rem;
+  color: var(--gray-900);
 }
 .nav-logo-icon {
-  width: 36px;
-  height: 36px;
-  background: linear-gradient(135deg, var(--blue), var(--teal));
+  width: 38px; height: 38px;
+  background: linear-gradient(135deg, var(--primary), var(--accent));
   border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 0.8rem;
 }
 .nav-links { display: flex; align-items: center; gap: 32px; list-style: none; }
 .nav-links a {
-  color: var(--gray-300);
+  color: var(--gray-600);
   text-decoration: none;
-  font-size: 0.9rem;
+  font-size: 0.92rem;
   font-weight: 500;
   transition: color 0.2s;
-  letter-spacing: 0.01em;
 }
-.nav-links a:hover { color: var(--white); }
+.nav-links a:hover { color: var(--primary); }
 .nav-cta {
-  background: var(--cta);
+  background: var(--primary) !important;
   color: var(--white) !important;
-  padding: 10px 24px;
-  border-radius: 8px;
+  padding: 10px 24px !important;
+  border-radius: 8px !important;
   font-weight: 600 !important;
-  transition: background 0.2s, box-shadow 0.2s !important;
+  transition: all 0.2s !important;
 }
 .nav-cta:hover {
-  background: var(--cta-hover) !important;
-  box-shadow: 0 0 24px var(--cta-glow);
+  background: var(--primary-dark) !important;
+  box-shadow: var(--shadow-blue) !important;
 }
-
-/* Mobile nav toggle */
 .nav-toggle {
   display: none;
   flex-direction: column;
@@ -156,760 +144,917 @@ body::before {
   padding: 4px;
 }
 .nav-toggle span {
-  width: 24px;
-  height: 2px;
-  background: var(--gray-200);
+  width: 24px; height: 2px;
+  background: var(--gray-700);
   border-radius: 2px;
   transition: 0.3s;
 }
 
 /* ─── HERO ─── */
 .hero {
-  min-height: 100vh;
-  display: flex;
-  align-items: center;
+  padding-top: 110px;
+  padding-bottom: 60px;
+  background: linear-gradient(180deg, var(--primary-50) 0%, var(--white) 100%);
   position: relative;
   overflow: hidden;
-  padding-top: 72px;
 }
-.hero-bg {
+.hero::before {
+  content: '';
   position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse 80% 60% at 50% 0%, rgba(59,130,246,0.12) 0%, transparent 60%),
-    radial-gradient(ellipse 60% 50% at 80% 20%, rgba(6,214,160,0.06) 0%, transparent 50%),
-    radial-gradient(ellipse 50% 40% at 20% 80%, rgba(239,68,68,0.04) 0%, transparent 50%);
+  top: -200px; right: -200px;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(37,99,235,0.06), transparent 70%);
+  border-radius: 50%;
 }
-/* Grid pattern */
+.hero::after {
+  content: '';
+  position: absolute;
+  bottom: -100px; left: -100px;
+  width: 400px; height: 400px;
+  background: radial-gradient(circle, rgba(6,182,212,0.05), transparent 70%);
+  border-radius: 50%;
+}
 .hero-grid {
-  position: absolute;
-  inset: 0;
-  background-image:
-    linear-gradient(rgba(59,130,246,0.04) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(59,130,246,0.04) 1px, transparent 1px);
-  background-size: 60px 60px;
-  mask-image: radial-gradient(ellipse 70% 60% at 50% 40%, black, transparent);
-}
-.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
   position: relative;
-  z-index: 2;
-  text-align: center;
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 60px 24px;
+  z-index: 1;
 }
+.hero-text { max-width: 540px; }
 .hero-badge {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--teal-dim);
-  border: 1px solid rgba(6, 214, 160, 0.2);
-  color: var(--teal);
-  padding: 8px 20px;
+  background: var(--white);
+  border: 1px solid var(--primary-lighter);
+  color: var(--primary);
+  padding: 6px 16px;
   border-radius: 100px;
   font-size: 0.82rem;
-  font-weight: 500;
-  font-family: var(--font-mono);
-  margin-bottom: 32px;
-  letter-spacing: 0.03em;
+  font-weight: 600;
+  margin-bottom: 24px;
+  box-shadow: var(--shadow-sm);
 }
-.hero-badge .pulse {
-  width: 8px;
-  height: 8px;
-  background: var(--teal);
+.hero-badge .dot {
+  width: 8px; height: 8px;
+  background: var(--green);
   border-radius: 50%;
   animation: pulse 2s infinite;
 }
 @keyframes pulse {
-  0%, 100% { opacity: 1; box-shadow: 0 0 0 0 rgba(6,214,160,0.4); }
-  50% { opacity: 0.8; box-shadow: 0 0 0 8px rgba(6,214,160,0); }
+  0%, 100% { box-shadow: 0 0 0 0 rgba(16,185,129,0.4); }
+  50% { box-shadow: 0 0 0 8px rgba(16,185,129,0); }
 }
 .hero h1 {
-  font-family: var(--font-display);
-  font-size: clamp(2.5rem, 5.5vw, 4.2rem);
-  font-weight: 700;
-  color: var(--white);
-  line-height: 1.1;
-  margin-bottom: 24px;
+  font-size: clamp(2.2rem, 4.5vw, 3.4rem);
+  font-weight: 800;
+  color: var(--gray-900);
+  line-height: 1.12;
+  margin-bottom: 20px;
   letter-spacing: -0.03em;
 }
-.hero h1 .gradient-text {
-  background: linear-gradient(135deg, var(--blue-bright), var(--teal));
+.hero h1 .highlight {
+  background: linear-gradient(135deg, var(--primary), var(--accent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
 }
 .hero-sub {
-  font-size: clamp(1.05rem, 2vw, 1.25rem);
-  color: var(--gray-300);
-  max-width: 640px;
-  margin: 0 auto 40px;
+  font-size: 1.12rem;
+  color: var(--gray-500);
   line-height: 1.7;
+  margin-bottom: 32px;
 }
-.hero-buttons {
-  display: flex;
-  gap: 16px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-bottom: 48px;
-}
+.hero-buttons { display: flex; gap: 12px; flex-wrap: wrap; margin-bottom: 36px; }
 .btn-primary {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--cta);
+  background: var(--primary);
   color: var(--white);
-  padding: 16px 36px;
-  border-radius: 12px;
-  font-size: 1rem;
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-size: 0.95rem;
   font-weight: 600;
   text-decoration: none;
   border: none;
   cursor: pointer;
   transition: all 0.2s;
-  font-family: var(--font-body);
-  box-shadow: 0 4px 24px var(--cta-glow);
+  font-family: var(--font);
+  box-shadow: var(--shadow-blue);
 }
 .btn-primary:hover {
-  background: var(--cta-hover);
+  background: var(--primary-dark);
   transform: translateY(-2px);
-  box-shadow: 0 8px 32px var(--cta-glow);
+  box-shadow: 0 14px 40px -10px rgba(37,99,235,0.35);
 }
-.btn-secondary {
+.btn-outline {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: transparent;
-  color: var(--gray-200);
-  padding: 16px 36px;
-  border-radius: 12px;
-  font-size: 1rem;
-  font-weight: 500;
+  background: var(--white);
+  color: var(--gray-700);
+  padding: 14px 32px;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  font-weight: 600;
   text-decoration: none;
-  border: 1px solid var(--gray-500);
+  border: 1px solid var(--gray-300);
   cursor: pointer;
   transition: all 0.2s;
-  font-family: var(--font-body);
+  font-family: var(--font);
 }
-.btn-secondary:hover {
-  border-color: var(--gray-300);
-  color: var(--white);
-  background: rgba(255,255,255,0.03);
+.btn-outline:hover {
+  border-color: var(--primary);
+  color: var(--primary);
+  box-shadow: var(--shadow);
 }
 .hero-trust {
   display: flex;
-  justify-content: center;
-  gap: 40px;
+  gap: 28px;
   flex-wrap: wrap;
 }
 .trust-item {
   display: flex;
   align-items: center;
-  gap: 10px;
-  color: var(--gray-400);
-  font-size: 0.88rem;
+  gap: 8px;
+  font-size: 0.85rem;
+  color: var(--gray-500);
   font-weight: 500;
 }
-.trust-icon {
-  width: 40px;
-  height: 40px;
-  background: var(--surface-raised);
-  border: 1px solid rgba(255,255,255,0.06);
-  border-radius: 10px;
+.trust-item svg { width: 20px; height: 20px; color: var(--primary); flex-shrink: 0; }
+
+/* Hero Visual — Bot illustration */
+.hero-visual {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+  min-height: 480px;
 }
-.trust-icon svg { width: 20px; height: 20px; }
+.hero-bot {
+  position: relative;
+  z-index: 2;
+}
+/* Central bot */
+.bot-center {
+  width: 140px; height: 140px;
+  background: linear-gradient(135deg, #e0f2fe, #dbeafe);
+  border: 3px solid var(--white);
+  border-radius: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 20px 60px rgba(37,99,235,0.15);
+  position: relative;
+  z-index: 5;
+  margin: 0 auto;
+}
+.bot-face {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+.bot-eyes {
+  display: flex;
+  gap: 16px;
+}
+.bot-eye {
+  width: 18px; height: 18px;
+  background: var(--primary);
+  border-radius: 50%;
+  position: relative;
+}
+.bot-eye::after {
+  content: '';
+  position: absolute;
+  top: 3px; right: 4px;
+  width: 6px; height: 6px;
+  background: white;
+  border-radius: 50%;
+}
+.bot-mouth {
+  width: 28px; height: 14px;
+  border: 3px solid var(--primary);
+  border-top: none;
+  border-radius: 0 0 20px 20px;
+}
+.bot-antenna {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 3px; height: 16px;
+  background: var(--primary-lighter);
+}
+.bot-antenna::after {
+  content: '';
+  position: absolute;
+  top: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 10px; height: 10px;
+  background: var(--primary);
+  border-radius: 50%;
+  animation: pulse 2s infinite;
+}
+/* Orbit ring */
+.orbit-ring {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 380px; height: 380px;
+  border: 2px dashed var(--gray-200);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  animation: orbitSpin 30s linear infinite;
+}
+@keyframes orbitSpin {
+  from { transform: translate(-50%, -50%) rotate(0deg); }
+  to { transform: translate(-50%, -50%) rotate(360deg); }
+}
+/* Social icons positioned around */
+.social-orbit {
+  position: absolute;
+  top: 50%; left: 50%;
+  width: 380px; height: 380px;
+  transform: translate(-50%, -50%);
+}
+.social-float {
+  position: absolute;
+  width: 52px; height: 52px;
+  background: var(--white);
+  border-radius: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  border: 1px solid var(--gray-100);
+  transition: transform 0.3s, box-shadow 0.3s;
+  animation: floatY 3s ease-in-out infinite;
+}
+.social-float:hover { transform: scale(1.15); box-shadow: var(--shadow-md); }
+.social-float svg { width: 26px; height: 26px; }
+.social-float:nth-child(1) { top: -10px; left: 50%; transform: translateX(-50%); animation-delay: 0s; }
+.social-float:nth-child(2) { top: 20%; right: -10px; animation-delay: 0.5s; }
+.social-float:nth-child(3) { bottom: 20%; right: -10px; animation-delay: 1s; }
+.social-float:nth-child(4) { bottom: -10px; left: 50%; transform: translateX(-50%); animation-delay: 1.5s; }
+.social-float:nth-child(5) { bottom: 20%; left: -10px; animation-delay: 2s; }
+.social-float:nth-child(6) { top: 20%; left: -10px; animation-delay: 2.5s; }
+@keyframes floatY {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+.social-float:nth-child(1) { animation: floatY 3s ease-in-out infinite; }
+/* Chat bubbles floating */
+.chat-bubble {
+  position: absolute;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 10px 16px;
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--gray-700);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  border: 1px solid var(--gray-100);
+  white-space: nowrap;
+  z-index: 3;
+}
+.chat-bubble::after {
+  content: '';
+  position: absolute;
+  width: 10px; height: 10px;
+  background: var(--white);
+  border: 1px solid var(--gray-100);
+  border-top: none; border-left: none;
+  transform: rotate(45deg);
+}
+.chat-bubble.left {
+  left: -30px;
+  top: 25%;
+}
+.chat-bubble.left::after {
+  right: -6px; top: 12px;
+}
+.chat-bubble.right {
+  right: -40px;
+  top: 55%;
+}
+.chat-bubble.right::after {
+  left: -6px; top: 12px;
+  transform: rotate(-135deg);
+}
+.chat-bubble.top-right {
+  right: 0px;
+  top: 5%;
+}
+.chat-bubble .bubble-icon { margin-right: 6px; }
+/* Analytics mini card */
+.mini-card {
+  position: absolute;
+  background: var(--white);
+  border-radius: 12px;
+  padding: 12px 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  border: 1px solid var(--gray-100);
+  z-index: 4;
+  font-size: 0.75rem;
+}
+.mini-card.analytics {
+  bottom: 10px;
+  left: -20px;
+}
+.mini-card.satisfaction {
+  bottom: 60px;
+  right: -30px;
+}
+.mini-card .mc-title {
+  font-weight: 700;
+  color: var(--gray-800);
+  font-size: 0.72rem;
+  margin-bottom: 4px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.mini-card .mc-value {
+  font-weight: 800;
+  font-size: 1.3rem;
+  color: var(--primary);
+}
+.mini-card .mc-bar {
+  height: 4px;
+  background: var(--gray-100);
+  border-radius: 4px;
+  margin-top: 6px;
+  overflow: hidden;
+}
+.mini-card .mc-bar-fill {
+  height: 100%;
+  border-radius: 4px;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+}
+
+/* ─── LOGOS BAR ─── */
+.logos-bar {
+  padding: 40px 0;
+  border-top: 1px solid var(--gray-100);
+  border-bottom: 1px solid var(--gray-100);
+  background: var(--gray-50);
+}
+.logos-bar-title {
+  text-align: center;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--gray-400);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 24px;
+}
+.logos-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+.logo-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  opacity: 0.6;
+  transition: opacity 0.3s;
+}
+.logo-item:hover { opacity: 1; }
+.logo-item svg { width: 28px; height: 28px; }
+.logo-item span { font-weight: 600; font-size: 0.9rem; color: var(--gray-600); }
+
+/* ─── SECTION HEADERS ─── */
+.section-header { text-align: center; max-width: 620px; margin: 0 auto 56px; }
+.section-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--primary-50);
+  color: var(--primary);
+  padding: 6px 16px;
+  border-radius: 100px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 16px;
+  border: 1px solid var(--primary-100);
+}
+.section-header h2 {
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800;
+  color: var(--gray-900);
+  line-height: 1.15;
+  margin-bottom: 14px;
+  letter-spacing: -0.02em;
+}
+.section-header p {
+  font-size: 1.05rem;
+  color: var(--gray-500);
+  line-height: 1.65;
+}
 
 /* ─── ABOUT ─── */
-.about { background: var(--surface); border-top: 1px solid rgba(255,255,255,0.04); }
+.about { background: var(--white); }
 .about-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 80px;
   align-items: center;
 }
-.about-label {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  color: var(--teal);
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  margin-bottom: 16px;
-}
 .about h2 {
-  font-family: var(--font-display);
-  font-size: clamp(2rem, 3.5vw, 2.8rem);
-  color: var(--white);
-  font-weight: 700;
-  line-height: 1.15;
-  margin-bottom: 24px;
-  letter-spacing: -0.02em;
+  font-size: clamp(1.8rem, 3.5vw, 2.4rem);
+  font-weight: 800;
+  color: var(--gray-900);
+  line-height: 1.2;
+  margin-bottom: 20px;
 }
 .about p {
-  font-size: 1.05rem;
+  font-size: 1.02rem;
+  color: var(--gray-500);
   line-height: 1.75;
-  color: var(--gray-300);
-  margin-bottom: 16px;
+  margin-bottom: 14px;
 }
-.about-visual {
-  position: relative;
-  background: var(--navy-mid);
-  border: 1px solid rgba(255,255,255,0.06);
-  border-radius: 20px;
-  padding: 40px;
-  overflow: hidden;
-}
-.about-visual::before {
-  content: '';
-  position: absolute;
-  top: -50%;
-  right: -50%;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(circle, rgba(59,130,246,0.08), transparent 60%);
-}
-.about-stat-grid {
+.about-stats {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 24px;
-  position: relative;
+  gap: 16px;
 }
-.about-stat {
-  background: var(--surface);
-  border: 1px solid rgba(255,255,255,0.06);
-  border-radius: 14px;
+.about-stat-card {
+  background: var(--gray-50);
+  border: 1px solid var(--gray-100);
+  border-radius: 16px;
   padding: 24px;
   text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-.about-stat .num {
-  font-family: var(--font-display);
-  font-size: 2.2rem;
-  font-weight: 700;
-  color: var(--blue-bright);
+.about-stat-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.about-stat-card .num {
+  font-size: 2rem;
+  font-weight: 800;
+  color: var(--primary);
   display: block;
-  margin-bottom: 4px;
 }
-.about-stat .label {
-  font-size: 0.85rem;
-  color: var(--gray-400);
+.about-stat-card .label {
+  font-size: 0.82rem;
+  color: var(--gray-500);
+  font-weight: 500;
+  margin-top: 4px;
 }
 
 /* ─── FEATURES ─── */
-.features { background: var(--navy); }
-.section-header {
-  text-align: center;
-  max-width: 600px;
-  margin: 0 auto 64px;
-}
-.section-label {
-  font-family: var(--font-mono);
-  font-size: 0.78rem;
-  color: var(--teal);
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  margin-bottom: 16px;
-  display: block;
-}
-.section-header h2 {
-  font-family: var(--font-display);
-  font-size: clamp(2rem, 3.5vw, 2.8rem);
-  color: var(--white);
-  font-weight: 700;
-  line-height: 1.15;
-  margin-bottom: 16px;
-  letter-spacing: -0.02em;
-}
-.section-header p {
-  font-size: 1.05rem;
-  color: var(--gray-400);
-  line-height: 1.6;
-}
+.features { background: var(--gray-50); }
 .features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 20px;
+  gap: 24px;
 }
 .feature-card {
-  background: var(--surface);
-  border: 1px solid rgba(255,255,255,0.05);
+  background: var(--white);
+  border: 1px solid var(--gray-100);
   border-radius: 16px;
   padding: 36px 28px;
-  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  transition: all 0.3s;
   position: relative;
-  overflow: hidden;
-}
-.feature-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--blue), transparent);
-  opacity: 0;
-  transition: opacity 0.3s;
 }
 .feature-card:hover {
-  border-color: rgba(59,130,246,0.15);
-  transform: translateY(-4px);
-  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-lg);
+  border-color: var(--primary-lighter);
 }
-.feature-card:hover::before { opacity: 1; }
 .feature-icon {
-  width: 52px;
-  height: 52px;
+  width: 56px; height: 56px;
   border-radius: 14px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin-bottom: 20px;
-  position: relative;
 }
-.feature-icon svg { width: 26px; height: 26px; position: relative; z-index: 1; }
-.feature-icon.blue { background: rgba(59,130,246,0.12); }
-.feature-icon.blue svg { color: var(--blue-bright); }
-.feature-icon.teal { background: var(--teal-dim); }
-.feature-icon.teal svg { color: var(--teal); }
-.feature-icon.gold { background: rgba(251,191,36,0.12); }
-.feature-icon.gold svg { color: var(--gold); }
-.feature-icon.red { background: rgba(239,68,68,0.12); }
-.feature-icon.red svg { color: var(--cta); }
+.feature-icon svg { width: 28px; height: 28px; }
+.fi-blue { background: var(--primary-50); }
+.fi-blue svg { color: var(--primary); }
+.fi-cyan { background: #ecfeff; }
+.fi-cyan svg { color: var(--accent); }
+.fi-orange { background: var(--orange-light); }
+.fi-orange svg { color: var(--orange); }
+.fi-green { background: var(--green-light); }
+.fi-green svg { color: var(--green); }
+.fi-purple { background: var(--purple-light); }
+.fi-purple svg { color: var(--purple); }
 .feature-card h3 {
-  font-family: var(--font-display);
-  font-size: 1.15rem;
-  color: var(--white);
-  font-weight: 600;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--gray-900);
   margin-bottom: 10px;
-  letter-spacing: -0.01em;
 }
 .feature-card p {
-  font-size: 0.92rem;
-  color: var(--gray-400);
-  line-height: 1.6;
+  font-size: 0.9rem;
+  color: var(--gray-500);
+  line-height: 1.65;
 }
 
 /* ─── FLOWCHART ─── */
-.flowchart {
-  background: var(--surface);
-  border-top: 1px solid rgba(255,255,255,0.04);
-  border-bottom: 1px solid rgba(255,255,255,0.04);
-  overflow: hidden;
-}
+.flowchart { background: var(--white); position: relative; overflow: hidden; }
 .flow-pipeline {
   display: flex;
-  align-items: stretch;
+  align-items: flex-start;
+  justify-content: center;
   gap: 0;
-  margin-top: 48px;
   position: relative;
+  margin-top: 48px;
 }
-/* connector line */
-.flow-pipeline::before {
-  content: '';
+.flow-connector {
   position: absolute;
-  top: 50%;
-  left: 60px;
-  right: 60px;
-  height: 2px;
-  background: linear-gradient(90deg, var(--blue), var(--teal), var(--blue-bright), var(--teal), var(--blue));
-  background-size: 200% 100%;
-  animation: flowLine 4s linear infinite;
-  transform: translateY(-50%);
+  top: 50px;
+  left: 10%;
+  right: 10%;
+  height: 3px;
+  background: linear-gradient(90deg, var(--primary-lighter), var(--accent-light), var(--primary-lighter));
   z-index: 0;
 }
-@keyframes flowLine {
-  0% { background-position: 0% 0; }
-  100% { background-position: 200% 0; }
+.flow-connector::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, var(--primary), var(--accent));
+  animation: flowPulse 3s ease-in-out infinite;
+  border-radius: 4px;
+}
+@keyframes flowPulse {
+  0% { clip-path: inset(0 100% 0 0); }
+  50% { clip-path: inset(0 0 0 0); }
+  100% { clip-path: inset(0 0 0 100%); }
 }
 .flow-step {
   flex: 1;
   text-align: center;
   position: relative;
   z-index: 1;
-  padding: 0 8px;
+  padding: 0 12px;
+  max-width: 200px;
 }
-.flow-node {
-  width: 80px;
-  height: 80px;
-  border-radius: 20px;
+.flow-icon {
+  width: 100px; height: 100px;
+  background: var(--white);
+  border: 2px solid var(--gray-200);
+  border-radius: 24px;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 0 auto 16px;
-  position: relative;
+  transition: all 0.3s;
+  box-shadow: var(--shadow);
 }
-.flow-node::after {
-  content: '';
+.flow-step:hover .flow-icon {
+  border-color: var(--primary);
+  box-shadow: var(--shadow-blue);
+  transform: translateY(-4px);
+}
+.flow-icon svg { width: 44px; height: 44px; }
+.flow-step-num {
   position: absolute;
-  inset: -4px;
-  border-radius: 24px;
-  border: 1px solid rgba(59,130,246,0.15);
-}
-.flow-node.n1 { background: rgba(59,130,246,0.15); }
-.flow-node.n2 { background: rgba(6,214,160,0.15); }
-.flow-node.n3 { background: rgba(251,191,36,0.15); }
-.flow-node.n4 { background: rgba(96,165,250,0.15); }
-.flow-node.n5 { background: rgba(239,68,68,0.12); }
-.flow-node svg { width: 32px; height: 32px; }
-.flow-step h4 {
-  font-family: var(--font-display);
-  font-size: 0.95rem;
+  top: -8px; right: calc(50% - 62px);
+  width: 24px; height: 24px;
+  background: var(--primary);
   color: var(--white);
-  font-weight: 600;
+  border-radius: 50%;
+  font-size: 0.72rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flow-step h4 {
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: var(--gray-900);
   margin-bottom: 6px;
 }
 .flow-step p {
   font-size: 0.8rem;
-  color: var(--gray-400);
+  color: var(--gray-500);
   line-height: 1.5;
 }
 .flow-arrow {
   position: absolute;
-  right: -14px;
-  top: 50%;
-  transform: translateY(-50%);
+  right: -8px;
+  top: 48px;
+  color: var(--primary);
   z-index: 2;
-  color: var(--gray-500);
 }
 
-/* ─── STATS (Why Lose Leads) ─── */
+/* ─── STATS ─── */
 .stats {
-  background: linear-gradient(135deg, #060a14, #0d1a2d);
+  background: linear-gradient(135deg, var(--gray-900), #1a2744);
+  color: var(--white);
   position: relative;
   overflow: hidden;
 }
 .stats::before {
   content: '';
   position: absolute;
-  inset: 0;
+  top: 0; left: 0; right: 0; bottom: 0;
   background:
-    radial-gradient(ellipse 50% 80% at 0% 50%, rgba(239,68,68,0.06), transparent),
-    radial-gradient(ellipse 50% 80% at 100% 50%, rgba(59,130,246,0.06), transparent);
+    radial-gradient(ellipse 50% 80% at 20% 20%, rgba(37,99,235,0.15), transparent),
+    radial-gradient(ellipse 50% 80% at 80% 80%, rgba(6,182,212,0.1), transparent);
 }
+.stats .section-label { background: rgba(255,255,255,0.1); color: var(--primary-lighter); border-color: rgba(255,255,255,0.1); }
+.stats .section-header h2 { color: var(--white); }
+.stats .section-header p { color: rgba(255,255,255,0.6); }
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  gap: 28px;
   position: relative;
 }
 .stat-card {
   text-align: center;
-  padding: 48px 32px;
-  background: rgba(255,255,255,0.02);
-  border: 1px solid rgba(255,255,255,0.05);
+  padding: 40px 28px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid rgba(255,255,255,0.08);
   border-radius: 20px;
-  position: relative;
-  overflow: hidden;
+  backdrop-filter: blur(10px);
 }
-.stat-card::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 80px;
-  height: 2px;
-}
-.stat-card:nth-child(1)::before { background: var(--cta); }
-.stat-card:nth-child(2)::before { background: var(--teal); }
-.stat-card:nth-child(3)::before { background: var(--blue); }
 .stat-number {
-  font-family: var(--font-display);
-  font-size: clamp(3rem, 5vw, 4.5rem);
-  font-weight: 700;
+  font-size: clamp(2.8rem, 5vw, 4rem);
+  font-weight: 800;
   line-height: 1;
   margin-bottom: 8px;
   letter-spacing: -0.03em;
 }
-.stat-card:nth-child(1) .stat-number { color: var(--cta); }
-.stat-card:nth-child(2) .stat-number { color: var(--teal); }
-.stat-card:nth-child(3) .stat-number { color: var(--blue-bright); }
+.stat-card:nth-child(1) .stat-number { color: #f87171; }
+.stat-card:nth-child(2) .stat-number { color: var(--accent-light); }
+.stat-card:nth-child(3) .stat-number { color: var(--primary-lighter); }
 .stat-unit {
-  font-family: var(--font-mono);
-  font-size: 0.82rem;
-  color: var(--gray-400);
+  font-size: 0.78rem;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.1em;
+  color: rgba(255,255,255,0.5);
   margin-bottom: 12px;
   display: block;
 }
 .stat-desc {
-  font-size: 1rem;
-  color: var(--gray-300);
+  font-size: 0.95rem;
+  color: rgba(255,255,255,0.7);
   line-height: 1.6;
-  max-width: 260px;
-  margin: 0 auto;
 }
 
-/* ─── COMPARISON (How Sales Double) ─── */
-.comparison { background: var(--navy); }
-.comparison-grid {
+/* ─── COMPARISON ─── */
+.comparison { background: var(--gray-50); }
+.comp-grid {
   display: grid;
-  grid-template-columns: 1fr 80px 1fr;
+  grid-template-columns: 1fr 60px 1fr;
   gap: 0;
   align-items: stretch;
-  margin-top: 48px;
 }
 .comp-card {
   border-radius: 20px;
-  padding: 48px 36px;
-  position: relative;
+  padding: 44px 36px;
 }
 .comp-card.before {
-  background: rgba(239,68,68,0.04);
-  border: 1px solid rgba(239,68,68,0.12);
+  background: #fef2f2;
+  border: 1px solid #fecaca;
 }
 .comp-card.after {
-  background: rgba(6,214,160,0.04);
-  border: 1px solid rgba(6,214,160,0.12);
+  background: #ecfdf5;
+  border: 1px solid #a7f3d0;
 }
 .comp-card h3 {
-  font-family: var(--font-display);
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
 }
-.comp-card.before h3 { color: var(--cta); }
-.comp-card.after h3 { color: var(--teal); }
+.comp-card.before h3 { color: var(--red); }
+.comp-card.after h3 { color: var(--green); }
 .comp-vs {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 .comp-vs span {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.2rem;
-  color: var(--gray-500);
-  background: var(--surface);
-  border: 1px solid rgba(255,255,255,0.08);
-  width: 56px;
-  height: 56px;
+  width: 48px; height: 48px;
+  background: var(--white);
+  border: 2px solid var(--gray-200);
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
+  font-weight: 800;
+  font-size: 1rem;
+  color: var(--gray-500);
 }
 .comp-metric {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 0;
-  border-bottom: 1px solid rgba(255,255,255,0.05);
+  padding: 14px 0;
+  border-bottom: 1px solid rgba(0,0,0,0.06);
 }
 .comp-metric:last-child { border-bottom: none; }
-.comp-metric .metric-label {
-  font-size: 0.92rem;
-  color: var(--gray-400);
-}
-.comp-metric .metric-value {
-  font-family: var(--font-display);
-  font-size: 1.1rem;
-  font-weight: 700;
-}
-.comp-card.before .metric-value { color: var(--gray-200); }
-.comp-card.after .metric-value { color: var(--teal); }
+.comp-metric .ml { font-size: 0.9rem; color: var(--gray-600); }
+.comp-metric .mv { font-size: 1rem; font-weight: 700; }
+.comp-card.before .mv { color: var(--gray-800); }
+.comp-card.after .mv { color: var(--green); }
 
 /* ─── TESTIMONIALS ─── */
-.testimonials {
-  background: var(--surface);
-  border-top: 1px solid rgba(255,255,255,0.04);
-}
-.testimonials-grid {
+.testimonials { background: var(--white); }
+.test-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
-.testimonial-card {
-  background: var(--navy);
-  border: 1px solid rgba(255,255,255,0.05);
+.test-card {
+  background: var(--gray-50);
+  border: 1px solid var(--gray-100);
   border-radius: 16px;
   padding: 32px 28px;
-  transition: transform 0.3s;
+  transition: transform 0.3s, box-shadow 0.3s;
 }
-.testimonial-card:hover { transform: translateY(-4px); }
-.testimonial-stars {
+.test-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+.test-stars {
   display: flex;
-  gap: 3px;
+  gap: 2px;
   margin-bottom: 16px;
 }
-.testimonial-stars svg { width: 18px; height: 18px; color: var(--gold); fill: var(--gold); }
-.testimonial-card blockquote {
-  font-size: 0.95rem;
-  color: var(--gray-200);
+.test-stars svg { width: 18px; height: 18px; fill: #fbbf24; color: #fbbf24; }
+.test-card blockquote {
+  font-size: 0.92rem;
+  color: var(--gray-600);
   line-height: 1.7;
   margin-bottom: 20px;
   font-style: italic;
 }
-.testimonial-author {
+.test-author {
   display: flex;
   align-items: center;
   gap: 12px;
 }
-.testimonial-avatar {
-  width: 44px;
-  height: 44px;
+.test-avatar {
+  width: 44px; height: 44px;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-family: var(--font-display);
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 0.9rem;
   color: var(--white);
 }
-.testimonial-card:nth-child(1) .testimonial-avatar { background: linear-gradient(135deg, #3b82f6, #2563eb); }
-.testimonial-card:nth-child(2) .testimonial-avatar { background: linear-gradient(135deg, #06d6a0, #059669); }
-.testimonial-card:nth-child(3) .testimonial-avatar { background: linear-gradient(135deg, #f59e0b, #d97706); }
-.testimonial-name {
-  font-family: var(--font-display);
-  font-size: 0.92rem;
-  color: var(--white);
-  font-weight: 600;
-}
-.testimonial-role {
-  font-size: 0.8rem;
-  color: var(--gray-400);
-}
-.testimonial-source {
+.test-card:nth-child(1) .test-avatar { background: var(--primary); }
+.test-card:nth-child(2) .test-avatar { background: var(--green); }
+.test-card:nth-child(3) .test-avatar { background: var(--orange); }
+.test-name { font-size: 0.9rem; font-weight: 700; color: var(--gray-900); }
+.test-role { font-size: 0.78rem; color: var(--gray-500); }
+.test-source {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 4px;
   margin-top: 4px;
-  font-size: 0.75rem;
-  color: var(--gray-500);
+  font-size: 0.72rem;
+  color: var(--gray-400);
 }
-.testimonial-source svg { width: 14px; height: 14px; }
+.test-source svg { width: 14px; height: 14px; }
 
 /* ─── PLATFORMS ─── */
-.platforms { background: var(--navy); }
-.platforms-row {
+.platforms { background: var(--gray-50); border-top: 1px solid var(--gray-100); }
+.platform-row {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 32px;
+  gap: 28px;
   flex-wrap: wrap;
-  margin-top: 48px;
+  margin-top: 40px;
 }
-.platform-item {
+.plat-item {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 12px;
-  opacity: 0.5;
-  transition: opacity 0.3s, transform 0.3s;
-  cursor: default;
+  gap: 10px;
+  transition: transform 0.3s;
 }
-.platform-item:hover { opacity: 1; transform: translateY(-4px); }
-.platform-icon-wrap {
-  width: 72px;
-  height: 72px;
-  background: var(--surface);
-  border: 1px solid rgba(255,255,255,0.06);
+.plat-item:hover { transform: translateY(-6px); }
+.plat-icon {
+  width: 68px; height: 68px;
+  background: var(--white);
+  border: 1px solid var(--gray-200);
   border-radius: 18px;
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: border-color 0.3s;
+  box-shadow: var(--shadow-sm);
+  transition: box-shadow 0.3s, border-color 0.3s;
 }
-.platform-item:hover .platform-icon-wrap { border-color: rgba(255,255,255,0.12); }
-.platform-icon-wrap svg { width: 32px; height: 32px; }
-.platform-item span {
-  font-size: 0.8rem;
-  color: var(--gray-400);
-  font-weight: 500;
-}
+.plat-item:hover .plat-icon { box-shadow: var(--shadow-md); border-color: var(--primary-lighter); }
+.plat-icon svg { width: 32px; height: 32px; }
+.plat-item span { font-size: 0.78rem; color: var(--gray-500); font-weight: 600; }
 
 /* ─── CTA ─── */
 .cta-section {
-  background: var(--surface);
-  border-top: 1px solid rgba(255,255,255,0.04);
+  background: linear-gradient(135deg, var(--primary), #1e40af);
+  color: var(--white);
   position: relative;
   overflow: hidden;
 }
 .cta-section::before {
   content: '';
   position: absolute;
-  inset: 0;
-  background:
-    radial-gradient(ellipse 60% 80% at 50% 100%, rgba(59,130,246,0.08), transparent);
+  top: -50%; right: -20%;
+  width: 600px; height: 600px;
+  background: radial-gradient(circle, rgba(255,255,255,0.08), transparent 60%);
+  border-radius: 50%;
 }
 .cta-inner {
   position: relative;
-  max-width: 680px;
+  max-width: 640px;
   margin: 0 auto;
   text-align: center;
 }
 .cta-inner h2 {
-  font-family: var(--font-display);
-  font-size: clamp(2rem, 3.5vw, 2.8rem);
+  font-size: clamp(1.8rem, 3.5vw, 2.6rem);
+  font-weight: 800;
   color: var(--white);
-  font-weight: 700;
   line-height: 1.15;
-  margin-bottom: 16px;
-  letter-spacing: -0.02em;
+  margin-bottom: 14px;
 }
 .cta-inner > p {
   font-size: 1.05rem;
-  color: var(--gray-400);
-  margin-bottom: 40px;
+  color: rgba(255,255,255,0.75);
+  margin-bottom: 36px;
 }
 .cta-form {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 16px;
+  gap: 14px;
   text-align: left;
 }
 .cta-form .full-width { grid-column: 1 / -1; }
-.form-group label {
+.fg label {
   display: block;
-  font-size: 0.82rem;
-  color: var(--gray-400);
+  font-size: 0.8rem;
+  color: rgba(255,255,255,0.7);
   margin-bottom: 6px;
   font-weight: 500;
 }
-.form-group input {
+.fg input {
   width: 100%;
-  padding: 14px 18px;
-  background: var(--navy);
-  border: 1px solid rgba(255,255,255,0.08);
+  padding: 13px 16px;
+  background: rgba(255,255,255,0.12);
+  border: 1px solid rgba(255,255,255,0.2);
   border-radius: 10px;
   color: var(--white);
-  font-family: var(--font-body);
-  font-size: 0.95rem;
-  transition: border-color 0.2s, box-shadow 0.2s;
+  font-family: var(--font);
+  font-size: 0.92rem;
+  transition: border-color 0.2s, background 0.2s;
   outline: none;
 }
-.form-group input::placeholder { color: var(--gray-500); }
-.form-group input:focus {
-  border-color: var(--blue);
-  box-shadow: 0 0 0 3px rgba(59,130,246,0.15);
+.fg input::placeholder { color: rgba(255,255,255,0.4); }
+.fg input:focus {
+  border-color: rgba(255,255,255,0.5);
+  background: rgba(255,255,255,0.18);
 }
-.cta-submit {
-  grid-column: 1 / -1;
-  margin-top: 8px;
-}
-.cta-submit .btn-primary {
+.cta-submit { grid-column: 1 / -1; margin-top: 8px; }
+.cta-submit .btn-cta {
   width: 100%;
+  display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 18px;
-  font-size: 1.05rem;
+  gap: 8px;
+  background: var(--white);
+  color: var(--primary-dark);
+  padding: 16px;
+  border-radius: 10px;
+  font-size: 1rem;
+  font-weight: 700;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font);
+  transition: all 0.2s;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+}
+.cta-submit .btn-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.2);
 }
 .cta-note {
   grid-column: 1 / -1;
   text-align: center;
-  font-size: 0.8rem;
-  color: var(--gray-500);
+  font-size: 0.78rem;
+  color: rgba(255,255,255,0.5);
 }
 
 /* ─── FOOTER ─── */
 .footer {
-  background: var(--navy);
-  border-top: 1px solid rgba(255,255,255,0.05);
+  background: var(--gray-900);
+  color: rgba(255,255,255,0.6);
   padding: 48px 0;
 }
 .footer-inner {
@@ -920,9 +1065,8 @@ body::before {
   gap: 24px;
 }
 .footer-brand {
-  font-family: var(--font-display);
   font-size: 1.1rem;
-  font-weight: 700;
+  font-weight: 800;
   color: var(--white);
 }
 .footer-links {
@@ -931,7 +1075,7 @@ body::before {
   list-style: none;
 }
 .footer-links a {
-  color: var(--gray-400);
+  color: rgba(255,255,255,0.5);
   text-decoration: none;
   font-size: 0.88rem;
   transition: color 0.2s;
@@ -942,21 +1086,22 @@ body::before {
   text-align: center;
   margin-top: 24px;
   padding-top: 24px;
-  border-top: 1px solid rgba(255,255,255,0.05);
+  border-top: 1px solid rgba(255,255,255,0.08);
   font-size: 0.82rem;
-  color: var(--gray-500);
 }
 
 /* ─── RESPONSIVE ─── */
 @media (max-width: 1024px) {
+  .hero-grid { grid-template-columns: 1fr; text-align: center; }
+  .hero-text { max-width: 100%; margin: 0 auto; }
+  .hero-buttons { justify-content: center; }
+  .hero-trust { justify-content: center; }
+  .hero-visual { min-height: 400px; margin-top: 32px; }
   .features-grid { grid-template-columns: repeat(2, 1fr); }
-  .stats-grid { grid-template-columns: repeat(3, 1fr); gap: 16px; }
-  .about-grid { gap: 48px; }
-  .comparison-grid { grid-template-columns: 1fr; gap: 16px; }
+  .comp-grid { grid-template-columns: 1fr; gap: 16px; }
   .comp-vs { padding: 8px 0; }
-  .comp-vs span { margin: 0 auto; }
+  .about-grid { gap: 48px; }
 }
-
 @media (max-width: 768px) {
   .section-pad { padding: 64px 0; }
   .nav-links { display: none; }
@@ -964,68 +1109,59 @@ body::before {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 72px;
-    left: 0;
-    right: 0;
-    background: rgba(10, 14, 26, 0.98);
+    top: 70px; left: 0; right: 0;
+    background: rgba(255,255,255,0.98);
     backdrop-filter: blur(20px);
     padding: 24px;
     gap: 16px;
-    border-bottom: 1px solid rgba(255,255,255,0.06);
+    border-bottom: 1px solid var(--gray-200);
+    box-shadow: var(--shadow);
   }
   .nav-toggle { display: flex; }
-  .about-grid { grid-template-columns: 1fr; gap: 40px; }
+  .about-grid { grid-template-columns: 1fr; }
   .features-grid { grid-template-columns: 1fr; }
   .stats-grid { grid-template-columns: 1fr; }
-  .testimonials-grid { grid-template-columns: 1fr; }
+  .test-grid { grid-template-columns: 1fr; }
   .flow-pipeline {
     flex-direction: column;
-    gap: 24px;
     align-items: center;
+    gap: 32px;
   }
-  .flow-pipeline::before {
-    top: 40px;
-    bottom: 40px;
-    left: 50%;
-    right: auto;
-    width: 2px;
-    height: auto;
-    transform: translateX(-50%);
-    background: linear-gradient(180deg, var(--blue), var(--teal), var(--blue-bright));
-    animation: none;
-  }
+  .flow-connector { display: none; }
   .flow-arrow { display: none; }
   .cta-form { grid-template-columns: 1fr; }
-  .hero-trust { gap: 24px; }
-  .platforms-row { gap: 20px; }
-  .platform-item { opacity: 0.7; }
+  .platform-row { gap: 16px; }
+  .hero-visual { min-height: 320px; }
+  .social-orbit { width: 300px; height: 300px; }
+  .orbit-ring { width: 300px; height: 300px; }
+  .bot-center { width: 110px; height: 110px; border-radius: 24px; }
+  .social-float { width: 44px; height: 44px; border-radius: 12px; }
+  .social-float svg { width: 22px; height: 22px; }
+  .chat-bubble { display: none; }
+  .mini-card { display: none; }
 }
-
 @media (max-width: 480px) {
   .hero-buttons { flex-direction: column; }
-  .hero-buttons .btn-primary,
-  .hero-buttons .btn-secondary { width: 100%; justify-content: center; }
-  .stat-card { padding: 32px 20px; }
-  .comp-card { padding: 32px 24px; }
+  .hero-buttons a { width: 100%; justify-content: center; }
 }
 </style>
 </head>
 <body>
 
-<!-- ════════ NAVIGATION ════════ -->
+<!-- NAV -->
 <nav class="nav" id="nav">
   <div class="nav-inner">
     <a href="#" class="nav-logo">
       <div class="nav-logo-icon">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 5.58 2 10c0 2.24 1.12 4.27 2.94 5.74-.16 1.58-.88 2.97-1.94 3.76a.5.5 0 00.26.9c2.4-.1 4.43-.94 5.85-2.12.6.08 1.22.12 1.89.12 5.52 0 10-3.58 10-8s-4.48-8-10-8z"/></svg>
       </div>
-      AutoReply AI
+      Social Clouds
     </a>
     <ul class="nav-links" id="navLinks">
       <li><a href="#about">About</a></li>
       <li><a href="#features">Features</a></li>
       <li><a href="#how-it-works">How It Works</a></li>
-      <li><a href="#testimonials">Testimonials</a></li>
+      <li><a href="#testimonials">Reviews</a></li>
       <li><a href="#demo" class="nav-cta">Get Demo</a></li>
     </ul>
     <button class="nav-toggle" id="navToggle" aria-label="Menu">
@@ -1034,145 +1170,242 @@ body::before {
   </div>
 </nav>
 
-<!-- ════════ HERO ════════ -->
+<!-- HERO -->
 <section class="hero" id="hero">
-  <div class="hero-bg"></div>
-  <div class="hero-grid"></div>
-  <div class="hero-content">
-    <div class="hero-badge reveal">
-      <span class="pulse"></span>
-      AI-Powered Automation
-    </div>
-    <h1 class="reveal reveal-delay-1">
-      Never Miss a Lead Again —<br>
-      <span class="gradient-text">AI That Responds Instantly, 24/7</span>
-    </h1>
-    <p class="hero-sub reveal reveal-delay-2">
-      Automatically reply to comments, messages, enquiries, and reviews across Facebook, Instagram, YouTube, X, Google My Business, and more — before your competitors even see the notification.
-    </p>
-    <div class="hero-buttons reveal reveal-delay-3">
-      <a href="#demo" class="btn-primary">
-        Get a Free Demo
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
-      </a>
-      <a href="#how-it-works" class="btn-secondary">
-        See How It Works
-        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8" fill="currentColor" stroke="none"/></svg>
-      </a>
-    </div>
-    <div class="hero-trust reveal reveal-delay-4">
-      <div class="trust-item">
-        <div class="trust-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#06d6a0" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+  <div class="container">
+    <div class="hero-grid">
+      <div class="hero-text reveal">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          AI-Powered Social Media Automation
         </div>
-        <span>24/7 Automation</span>
+        <h1>
+          Respond Instantly.<br>
+          <span class="highlight">Convert More Leads.</span><br>
+          24/7 on Autopilot.
+        </h1>
+        <p class="hero-sub">
+          Social Clouds automatically replies to comments, DMs, enquiries, and reviews across Facebook, Instagram, YouTube, X, Google My Business &amp; more — before your competitors even see the notification.
+        </p>
+        <div class="hero-buttons">
+          <a href="#demo" class="btn-primary">
+            Get a Free Demo
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+          </a>
+          <a href="#how-it-works" class="btn-outline">
+            See How It Works
+          </a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            <span>24/7 Automation</span>
+          </div>
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            <span>6+ Platforms</span>
+          </div>
+          <div class="trust-item">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            <span>10x Faster</span>
+          </div>
+        </div>
       </div>
-      <div class="trust-item">
-        <div class="trust-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+
+      <!-- Hero Visual — Bot with social icons -->
+      <div class="hero-visual reveal reveal-delay-2">
+        <div class="hero-bot">
+          <!-- Orbit ring -->
+          <div class="orbit-ring"></div>
+
+          <!-- Central bot -->
+          <div class="bot-center">
+            <div class="bot-antenna"></div>
+            <div class="bot-face">
+              <div class="bot-eyes">
+                <div class="bot-eye"></div>
+                <div class="bot-eye"></div>
+              </div>
+              <div class="bot-mouth"></div>
+            </div>
+          </div>
+
+          <!-- Floating social icons -->
+          <div class="social-orbit">
+            <!-- Facebook -->
+            <div class="social-float" style="top:-10px;left:50%;transform:translateX(-50%)">
+              <svg viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </div>
+            <!-- Instagram -->
+            <div class="social-float" style="top:18%;right:-10px">
+              <svg viewBox="0 0 24 24" fill="#E4405F"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+            </div>
+            <!-- WhatsApp -->
+            <div class="social-float" style="bottom:18%;right:-10px">
+              <svg viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </div>
+            <!-- YouTube -->
+            <div class="social-float" style="bottom:-10px;left:50%;transform:translateX(-50%)">
+              <svg viewBox="0 0 24 24" fill="#FF0000"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+            </div>
+            <!-- X -->
+            <div class="social-float" style="bottom:18%;left:-10px">
+              <svg viewBox="0 0 24 24" fill="#000"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+            </div>
+            <!-- Google -->
+            <div class="social-float" style="top:18%;left:-10px">
+              <svg viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+            </div>
+          </div>
+
+          <!-- Chat bubbles -->
+          <div class="chat-bubble left" style="top:20%;left:-40px">
+            <span class="bubble-icon">💬</span> "When is the sale?"
+          </div>
+          <div class="chat-bubble right" style="top:40%;right:-50px">
+            <span class="bubble-icon">🤖</span> Auto-replied in 2s!
+          </div>
+          <div class="chat-bubble left" style="top:60%;left:-30px">
+            <span class="bubble-icon">⭐</span> "Great service!"
+          </div>
+
+          <!-- Mini cards -->
+          <div class="mini-card analytics" style="bottom:5%;left:-30px">
+            <div class="mc-title">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--primary)" stroke-width="2" stroke-linecap="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/></svg>
+              Response Time
+            </div>
+            <div class="mc-value">Avg. 3s</div>
+            <div class="mc-bar"><div class="mc-bar-fill" style="width:92%"></div></div>
+          </div>
+          <div class="mini-card satisfaction" style="bottom:15%;right:-40px">
+            <div class="mc-title">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="var(--green)" stroke-width="2" stroke-linecap="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              Satisfaction
+            </div>
+            <div class="mc-value" style="color:var(--green)">92%</div>
+          </div>
         </div>
-        <span>6+ Platforms</span>
-      </div>
-      <div class="trust-item">
-        <div class="trust-icon">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
-        </div>
-        <span>10x Faster Responses</span>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ════════ ABOUT US ════════ -->
+<!-- PLATFORMS BAR -->
+<section class="logos-bar">
+  <div class="container">
+    <div class="logos-bar-title">Works across all major platforms</div>
+    <div class="logos-row">
+      <div class="logo-item">
+        <svg viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+        <span>Facebook</span>
+      </div>
+      <div class="logo-item">
+        <svg viewBox="0 0 24 24" fill="#E4405F"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
+        <span>Instagram</span>
+      </div>
+      <div class="logo-item">
+        <svg viewBox="0 0 24 24" fill="#FF0000"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+        <span>YouTube</span>
+      </div>
+      <div class="logo-item">
+        <svg viewBox="0 0 24 24" fill="#000"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+        <span>X (Twitter)</span>
+      </div>
+      <div class="logo-item">
+        <svg viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        <span>WhatsApp</span>
+      </div>
+      <div class="logo-item">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z" fill="#4285F4"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34A853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l3.66-2.84z" fill="#FBBC05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#EA4335"/></svg>
+        <span>Google Business</span>
+      </div>
+      <div class="logo-item">
+        <svg viewBox="0 0 24 24" fill="#0A66C2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+        <span>LinkedIn</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
 <section class="about section-pad" id="about">
   <div class="container">
     <div class="about-grid">
       <div class="reveal">
-        <div class="about-label">About Us</div>
+        <div class="section-label">About Social Clouds</div>
         <h2>We Help Businesses Respond Smarter, Not Harder</h2>
-        <p>
-          AutoReply AI was built with one mission: to make sure no business ever loses a customer to a slow response again. Our AI-powered platform monitors your social media channels around the clock, instantly engaging with every comment, message, and review.
-        </p>
-        <p>
-          Whether you're a local shop or a growing enterprise, our automation adapts to your brand voice and delivers personalized, human-like responses that convert leads into loyal customers.
-        </p>
+        <p>Social Clouds was built with one mission: to make sure no business ever loses a customer to a slow response again. Our AI monitors your social media around the clock, instantly engaging with every comment, message, and review.</p>
+        <p>Whether you're a local shop or a growing enterprise, our automation adapts to your brand voice and delivers personalized, human-like responses that convert leads into loyal customers.</p>
       </div>
-      <div class="about-visual reveal reveal-delay-2">
-        <div class="about-stat-grid">
-          <div class="about-stat">
-            <span class="num">50K+</span>
-            <span class="label">Replies Sent Daily</span>
-          </div>
-          <div class="about-stat">
-            <span class="num">6+</span>
-            <span class="label">Platforms Covered</span>
-          </div>
-          <div class="about-stat">
-            <span class="num">98%</span>
-            <span class="label">Response Accuracy</span>
-          </div>
-          <div class="about-stat">
-            <span class="num">&lt;3s</span>
-            <span class="label">Avg. Response Time</span>
-          </div>
+      <div class="about-stats reveal reveal-delay-2">
+        <div class="about-stat-card">
+          <span class="num">50K+</span>
+          <span class="label">Replies Sent Daily</span>
+        </div>
+        <div class="about-stat-card">
+          <span class="num">6+</span>
+          <span class="label">Platforms Covered</span>
+        </div>
+        <div class="about-stat-card">
+          <span class="num">98%</span>
+          <span class="label">Response Accuracy</span>
+        </div>
+        <div class="about-stat-card">
+          <span class="num">&lt;3s</span>
+          <span class="label">Avg. Response Time</span>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ════════ FEATURES ════════ -->
+<!-- FEATURES -->
 <section class="features section-pad" id="features">
   <div class="container">
     <div class="section-header reveal">
-      <span class="section-label">Features &amp; Benefits</span>
+      <div class="section-label">Features &amp; Benefits</div>
       <h2>Everything You Need to Automate Social Engagement</h2>
       <p>Powerful tools that work together to capture every lead and delight every customer.</p>
     </div>
     <div class="features-grid">
-      <!-- Card 1 -->
       <div class="feature-card reveal">
-        <div class="feature-icon blue">
+        <div class="feature-icon fi-blue">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
         </div>
         <h3>Auto-Reply to Comments</h3>
         <p>Instantly respond to every comment on your posts across all platforms. Keep conversations alive and engagement high, 24/7.</p>
       </div>
-      <!-- Card 2 -->
       <div class="feature-card reveal reveal-delay-1">
-        <div class="feature-icon teal">
+        <div class="feature-icon fi-cyan">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
         </div>
         <h3>DM &amp; Inbox Automation</h3>
-        <p>Automatically answer direct messages and inquiries. Qualify leads, answer FAQs, and route hot prospects to your sales team.</p>
+        <p>Automatically answer direct messages. Qualify leads, answer FAQs, and route hot prospects to your sales team.</p>
       </div>
-      <!-- Card 3 -->
       <div class="feature-card reveal reveal-delay-2">
-        <div class="feature-icon gold">
+        <div class="feature-icon fi-orange">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         </div>
         <h3>Review Response Management</h3>
-        <p>Respond to Google My Business and platform reviews instantly. Thank positive reviewers and address concerns before they escalate.</p>
+        <p>Respond to Google My Business and platform reviews instantly. Thank positive reviewers, address concerns early.</p>
       </div>
-      <!-- Card 4 -->
       <div class="feature-card reveal">
-        <div class="feature-icon blue">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+        <div class="feature-icon fi-green">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
         </div>
         <h3>Multi-Platform Support</h3>
-        <p>One dashboard for Facebook, Instagram, YouTube, X (Twitter), Google My Business, LinkedIn, TikTok, and more.</p>
+        <p>One dashboard for Facebook, Instagram, YouTube, X, Google My Business, WhatsApp, LinkedIn, and more.</p>
       </div>
-      <!-- Card 5 -->
       <div class="feature-card reveal reveal-delay-1">
-        <div class="feature-icon teal">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 0110 10c0 5.52-4.48 10-10 10S2 17.52 2 12"/><path d="M12 2c-2.8 0-5.07 4.48-5.07 10S9.2 22 12 22"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2c2.8 0 5.07 4.48 5.07 10S14.8 22 12 22"/></svg>
+        <div class="feature-icon fi-purple">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg>
         </div>
         <h3>Smart AI Responses</h3>
-        <p>Context-aware replies that match your brand voice. Our AI understands intent, sentiment, and urgency to craft the perfect response.</p>
+        <p>Context-aware replies matching your brand voice. Our AI understands intent, sentiment, and urgency perfectly.</p>
       </div>
-      <!-- Card 6 -->
       <div class="feature-card reveal reveal-delay-2">
-        <div class="feature-icon red">
+        <div class="feature-icon fi-blue">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="18" y1="20" x2="18" y2="10"/><line x1="12" y1="20" x2="12" y2="4"/><line x1="6" y1="20" x2="6" y2="14"/><line x1="2" y1="20" x2="22" y2="20"/></svg>
         </div>
         <h3>Analytics Dashboard</h3>
@@ -1182,59 +1415,65 @@ body::before {
   </div>
 </section>
 
-<!-- ════════ FLOWCHART ════════ -->
+<!-- FLOWCHART -->
 <section class="flowchart section-pad" id="how-it-works">
   <div class="container">
     <div class="section-header reveal">
-      <span class="section-label">How It Works</span>
+      <div class="section-label">How It Works</div>
       <h2>From Comment to Conversion in Seconds</h2>
       <p>Our 5-step automation pipeline handles everything — so you don't have to.</p>
     </div>
     <div class="flow-pipeline reveal">
+      <div class="flow-connector"></div>
       <div class="flow-step">
-        <div class="flow-node n1">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg>
+        <div class="flow-step-num">1</div>
+        <div class="flow-icon">
+          <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="8" width="36" height="28" rx="4" stroke="#2563eb" stroke-width="2.5"/><circle cx="18" cy="20" r="4" fill="#93c5fd"/><path d="M30 18h6M30 24h6" stroke="#2563eb" stroke-width="2" stroke-linecap="round"/><path d="M12 30h24" stroke="#dbeafe" stroke-width="2" stroke-linecap="round"/></svg>
         </div>
-        <h4>Customer Engages</h4>
+        <h4>Customer Comment</h4>
         <p>A comment, DM, or review arrives on any platform</p>
       </div>
       <div class="flow-step">
-        <div class="flow-node n2">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#06d6a0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="8" y1="11" x2="14" y2="11"/><line x1="11" y1="8" x2="11" y2="14"/></svg>
+        <div class="flow-step-num">2</div>
+        <div class="flow-icon">
+          <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="16" stroke="#06b6d4" stroke-width="2.5"/><path d="M24 14c-4 0-7 3-7 7 0 2 .8 3.8 2 5l5 6 5-6c1.2-1.2 2-3 2-5 0-4-3-7-7-7z" fill="#a5f3fc"/><circle cx="24" cy="21" r="3" fill="#06b6d4"/></svg>
         </div>
-        <h4>AI Detects &amp; Analyzes</h4>
-        <p>Intent, sentiment, and urgency are identified instantly</p>
+        <h4>AI Processing</h4>
+        <p>Intent, sentiment &amp; urgency identified instantly</p>
       </div>
       <div class="flow-step">
-        <div class="flow-node n3">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#fbbf24" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        <div class="flow-step-num">3</div>
+        <div class="flow-icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M12 36l-4 4V12a4 4 0 014-4h24a4 4 0 014 4v20a4 4 0 01-4 4H12z" stroke="#f97316" stroke-width="2.5"/><path d="M18 18h12M18 24h8" stroke="#f97316" stroke-width="2" stroke-linecap="round"/><circle cx="34" cy="14" r="6" fill="#fed7aa" stroke="#f97316" stroke-width="2"/><path d="M32 14l2 2 3-3" stroke="#f97316" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
-        <h4>Smart Response Generated</h4>
-        <p>Personalized, on-brand reply crafted by AI in milliseconds</p>
+        <h4>Automatic Reply</h4>
+        <p>Personalized, on-brand reply in milliseconds</p>
       </div>
       <div class="flow-step">
-        <div class="flow-node n4">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#60a5fa" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+        <div class="flow-step-num">4</div>
+        <div class="flow-icon">
+          <svg viewBox="0 0 48 48" fill="none"><rect x="10" y="10" width="28" height="28" rx="4" stroke="#8b5cf6" stroke-width="2.5"/><rect x="14" y="14" width="20" height="6" rx="2" fill="#ede9fe"/><rect x="14" y="24" width="20" height="6" rx="2" fill="#ede9fe"/><rect x="14" y="34" width="12" height="2" rx="1" fill="#c4b5fd"/><circle cx="36" cy="14" r="6" fill="#a78bfa"/><path d="M34 14l2 2 3-3" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
         </div>
-        <h4>Instant Reply Sent</h4>
-        <p>Response posted within seconds — before competitors react</p>
+        <h4>CRM Storage</h4>
+        <p>Contact &amp; conversation logged for follow-up</p>
       </div>
       <div class="flow-step">
-        <div class="flow-node n5">
-          <svg viewBox="0 0 24 24" fill="none" stroke="#ef4444" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+        <div class="flow-step-num">5</div>
+        <div class="flow-icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M8 36l8-8 6 6 8-10 10 12" stroke="#10b981" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="36" cy="14" r="8" fill="#d1fae5"/><path d="M33 14h6M36 11v6" stroke="#10b981" stroke-width="2" stroke-linecap="round"/></svg>
         </div>
-        <h4>Lead Captured in CRM</h4>
-        <p>Contact details and conversation logged for follow-up</p>
+        <h4>Lead Conversion</h4>
+        <p>Leads convert to paying customers automatically</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ════════ STATS ════════ -->
+<!-- STATS -->
 <section class="stats section-pad" id="stats">
   <div class="container">
     <div class="section-header reveal">
-      <span class="section-label">The Hard Truth</span>
+      <div class="section-label">The Hard Truth</div>
       <h2>Why Businesses Lose Leads Every Day</h2>
       <p>Speed wins. If you're not responding instantly, your competitors are.</p>
     </div>
@@ -1252,145 +1491,115 @@ body::before {
       <div class="stat-card reveal reveal-delay-2">
         <div class="stat-number">12h+</div>
         <span class="stat-unit">average response time</span>
-        <p class="stat-desc">Without automation, most businesses take over 12 hours to reply — and lose the lead</p>
+        <p class="stat-desc">Without automation, most businesses take 12+ hours to reply — losing the lead</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ════════ COMPARISON ════════ -->
+<!-- COMPARISON -->
 <section class="comparison section-pad" id="comparison">
   <div class="container">
     <div class="section-header reveal">
-      <span class="section-label">Before &amp; After</span>
+      <div class="section-label">Before &amp; After</div>
       <h2>See How Automation Doubles Your Sales</h2>
-      <p>Real metrics from businesses that switched to AutoReply AI.</p>
+      <p>Real metrics from businesses that switched to Social Clouds.</p>
     </div>
-    <div class="comparison-grid reveal">
+    <div class="comp-grid reveal">
       <div class="comp-card before">
         <h3>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="15" y1="9" x2="9" y2="15"/><line x1="9" y1="9" x2="15" y2="15"/></svg>
           Without Automation
         </h3>
-        <div class="comp-metric">
-          <span class="metric-label">Avg. Response Time</span>
-          <span class="metric-value">12+ hours</span>
-        </div>
-        <div class="comp-metric">
-          <span class="metric-label">Lead Conversion Rate</span>
-          <span class="metric-value">2–5%</span>
-        </div>
-        <div class="comp-metric">
-          <span class="metric-label">Missed Enquiries</span>
-          <span class="metric-value">60–80%</span>
-        </div>
-        <div class="comp-metric">
-          <span class="metric-label">Customer Satisfaction</span>
-          <span class="metric-value">Low</span>
-        </div>
-        <div class="comp-metric">
-          <span class="metric-label">Staff Hours / Week</span>
-          <span class="metric-value">40+ hrs</span>
-        </div>
+        <div class="comp-metric"><span class="ml">Avg. Response Time</span><span class="mv">12+ hours</span></div>
+        <div class="comp-metric"><span class="ml">Lead Conversion</span><span class="mv">2–5%</span></div>
+        <div class="comp-metric"><span class="ml">Missed Enquiries</span><span class="mv">60–80%</span></div>
+        <div class="comp-metric"><span class="ml">Customer Satisfaction</span><span class="mv">Low</span></div>
+        <div class="comp-metric"><span class="ml">Staff Hours / Week</span><span class="mv">40+ hrs</span></div>
       </div>
       <div class="comp-vs"><span>VS</span></div>
       <div class="comp-card after">
         <h3>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
-          With AutoReply AI
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          With Social Clouds
         </h3>
-        <div class="comp-metric">
-          <span class="metric-label">Avg. Response Time</span>
-          <span class="metric-value">Under 3 seconds</span>
-        </div>
-        <div class="comp-metric">
-          <span class="metric-label">Lead Conversion Rate</span>
-          <span class="metric-value">15–30%</span>
-        </div>
-        <div class="comp-metric">
-          <span class="metric-label">Missed Enquiries</span>
-          <span class="metric-value">Less than 1%</span>
-        </div>
-        <div class="comp-metric">
-          <span class="metric-label">Customer Satisfaction</span>
-          <span class="metric-value">Very High</span>
-        </div>
-        <div class="comp-metric">
-          <span class="metric-label">Staff Hours / Week</span>
-          <span class="metric-value">2–5 hrs</span>
-        </div>
+        <div class="comp-metric"><span class="ml">Avg. Response Time</span><span class="mv">Under 3 seconds</span></div>
+        <div class="comp-metric"><span class="ml">Lead Conversion</span><span class="mv">15–30%</span></div>
+        <div class="comp-metric"><span class="ml">Missed Enquiries</span><span class="mv">Less than 1%</span></div>
+        <div class="comp-metric"><span class="ml">Customer Satisfaction</span><span class="mv">Very High</span></div>
+        <div class="comp-metric"><span class="ml">Staff Hours / Week</span><span class="mv">2–5 hrs</span></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ════════ TESTIMONIALS ════════ -->
+<!-- TESTIMONIALS -->
 <section class="testimonials section-pad" id="testimonials">
   <div class="container">
     <div class="section-header reveal">
-      <span class="section-label">Social Proof</span>
+      <div class="section-label">Social Proof</div>
       <h2>Trusted by Businesses Like Yours</h2>
-      <p>Real feedback from real business owners who transformed their customer engagement.</p>
+      <p>Real feedback from business owners who transformed their customer engagement.</p>
     </div>
-    <div class="testimonials-grid">
-      <div class="testimonial-card reveal">
-        <div class="testimonial-stars">
+    <div class="test-grid">
+      <div class="test-card reveal">
+        <div class="test-stars">
           <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         </div>
-        <blockquote>"We were missing 70% of our Instagram DMs. Since switching to AutoReply AI, our response rate is 100% and sales inquiries have tripled. It's like having a full-time social media team."</blockquote>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">JR</div>
+        <blockquote>"We were missing 70% of our Instagram DMs. Since switching to Social Clouds, our response rate is 100% and sales inquiries have tripled."</blockquote>
+        <div class="test-author">
+          <div class="test-avatar">JR</div>
           <div>
-            <div class="testimonial-name">James Rodriguez</div>
-            <div class="testimonial-role">Owner, Urban Fitness Studio</div>
-            <div class="testimonial-source">
-              <svg viewBox="0 0 24 24" fill="#4285f4" stroke="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34a853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#fbbc05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#ea4335"/></svg>
+            <div class="test-name">James Rodriguez</div>
+            <div class="test-role">Owner, Urban Fitness Studio</div>
+            <div class="test-source">
+              <svg viewBox="0 0 24 24" fill="#4285f4"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34a853"/></svg>
               Google Review
             </div>
           </div>
         </div>
       </div>
-      <div class="testimonial-card reveal reveal-delay-1">
-        <div class="testimonial-stars">
+      <div class="test-card reveal reveal-delay-1">
+        <div class="test-stars">
           <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         </div>
-        <blockquote>"Our Google reviews used to sit unanswered for weeks. Now every review gets a thoughtful response within seconds. Our rating went from 3.8 to 4.7 stars in just two months."</blockquote>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">SP</div>
+        <blockquote>"Our Google reviews used to sit unanswered for weeks. Now every review gets a thoughtful response within seconds. Rating went from 3.8 to 4.7 stars!"</blockquote>
+        <div class="test-author">
+          <div class="test-avatar">SP</div>
           <div>
-            <div class="testimonial-name">Sarah Park</div>
-            <div class="testimonial-role">Marketing Director, Bloom Dental</div>
-            <div class="testimonial-source">
-              <svg viewBox="0 0 24 24" fill="#4285f4" stroke="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34a853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#fbbc05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#ea4335"/></svg>
+            <div class="test-name">Sarah Park</div>
+            <div class="test-role">Marketing Director, Bloom Dental</div>
+            <div class="test-source">
+              <svg viewBox="0 0 24 24" fill="#4285f4"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34a853"/></svg>
               Google Review
             </div>
           </div>
         </div>
       </div>
-      <div class="testimonial-card reveal reveal-delay-2">
-        <div class="testimonial-stars">
+      <div class="test-card reveal reveal-delay-2">
+        <div class="test-stars">
           <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
           <svg viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
         </div>
-        <blockquote>"As a restaurant owner, I was losing catering leads from Facebook comments. AutoReply AI now catches every single one and sends them to our booking system. Revenue is up 40%."</blockquote>
-        <div class="testimonial-author">
-          <div class="testimonial-avatar">MK</div>
+        <blockquote>"As a restaurant owner, I was losing catering leads from Facebook. Social Clouds now catches every one and sends them to our booking system. Revenue is up 40%."</blockquote>
+        <div class="test-author">
+          <div class="test-avatar">MK</div>
           <div>
-            <div class="testimonial-name">Michael Kim</div>
-            <div class="testimonial-role">Owner, K-BBQ House</div>
-            <div class="testimonial-source">
-              <svg viewBox="0 0 24 24" fill="#4285f4" stroke="none"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34a853"/><path d="M5.84 14.09c-.22-.66-.35-1.36-.35-2.09s.13-1.43.35-2.09V7.07H2.18C1.43 8.55 1 10.22 1 12s.43 3.45 1.18 4.93l2.85-2.22.81-.62z" fill="#fbbc05"/><path d="M12 5.38c1.62 0 3.06.56 4.21 1.64l3.15-3.15C17.45 2.09 14.97 1 12 1 7.7 1 3.99 3.47 2.18 7.07l3.66 2.84c.87-2.6 3.3-4.53 6.16-4.53z" fill="#ea4335"/></svg>
+            <div class="test-name">Michael Kim</div>
+            <div class="test-role">Owner, K-BBQ House</div>
+            <div class="test-source">
+              <svg viewBox="0 0 24 24" fill="#4285f4"><path d="M22.56 12.25c0-.78-.07-1.53-.2-2.25H12v4.26h5.92a5.06 5.06 0 01-2.2 3.32v2.77h3.57c2.08-1.92 3.28-4.74 3.28-8.1z"/><path d="M12 23c2.97 0 5.46-.98 7.28-2.66l-3.57-2.77c-.98.66-2.23 1.06-3.71 1.06-2.86 0-5.29-1.93-6.16-4.53H2.18v2.84C3.99 20.53 7.7 23 12 23z" fill="#34a853"/></svg>
               Google Review
             </div>
           </div>
@@ -1400,108 +1609,46 @@ body::before {
   </div>
 </section>
 
-<!-- ════════ PLATFORMS ════════ -->
-<section class="platforms section-pad" id="platforms">
-  <div class="container">
-    <div class="section-header reveal">
-      <span class="section-label">Integrations</span>
-      <h2>Works With Every Platform You Use</h2>
-      <p>One AI. All your channels. Zero leads missed.</p>
-    </div>
-    <div class="platforms-row reveal">
-      <!-- Facebook -->
-      <div class="platform-item">
-        <div class="platform-icon-wrap">
-          <svg viewBox="0 0 24 24" fill="#1877F2"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
-        </div>
-        <span>Facebook</span>
-      </div>
-      <!-- Instagram -->
-      <div class="platform-item">
-        <div class="platform-icon-wrap">
-          <svg viewBox="0 0 24 24" fill="url(#ig-grad)"><defs><radialGradient id="ig-grad" cx="30%" cy="107%"><stop offset="0%" stop-color="#fdf497"/><stop offset="5%" stop-color="#fdf497"/><stop offset="45%" stop-color="#fd5949"/><stop offset="60%" stop-color="#d6249f"/><stop offset="90%" stop-color="#285AEB"/></radialGradient></defs><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z"/></svg>
-        </div>
-        <span>Instagram</span>
-      </div>
-      <!-- YouTube -->
-      <div class="platform-item">
-        <div class="platform-icon-wrap">
-          <svg viewBox="0 0 24 24" fill="#FF0000"><path d="M23.498 6.186a3.016 3.016 0 00-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 00.502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 002.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 002.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
-        </div>
-        <span>YouTube</span>
-      </div>
-      <!-- X / Twitter -->
-      <div class="platform-item">
-        <div class="platform-icon-wrap">
-          <svg viewBox="0 0 24 24" fill="#ffffff"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-        </div>
-        <span>X (Twitter)</span>
-      </div>
-      <!-- Google My Business -->
-      <div class="platform-item">
-        <div class="platform-icon-wrap">
-          <svg viewBox="0 0 24 24" fill="none"><path d="M22 12c0 5.523-4.477 10-10 10S2 17.523 2 12 6.477 2 12 2s10 4.477 10 10z" fill="#4285F4"/><path d="M12 7v5l4.25 2.53" stroke="white" stroke-width="1.8" stroke-linecap="round"/></svg>
-        </div>
-        <span>Google Business</span>
-      </div>
-      <!-- LinkedIn -->
-      <div class="platform-item">
-        <div class="platform-icon-wrap">
-          <svg viewBox="0 0 24 24" fill="#0A66C2"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-        </div>
-        <span>LinkedIn</span>
-      </div>
-      <!-- TikTok -->
-      <div class="platform-item">
-        <div class="platform-icon-wrap">
-          <svg viewBox="0 0 24 24" fill="#ffffff"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg>
-        </div>
-        <span>TikTok</span>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ════════ CTA ════════ -->
+<!-- CTA -->
 <section class="cta-section section-pad" id="demo">
   <div class="container">
     <div class="cta-inner reveal">
       <h2>Ready to 10x Your Response Speed?</h2>
-      <p>Request a free demo and see how AutoReply AI transforms your customer engagement in minutes.</p>
+      <p>Request a free demo and see how Social Clouds transforms your customer engagement in minutes.</p>
       <form class="cta-form" onsubmit="handleSubmit(event)">
-        <div class="form-group">
+        <div class="fg">
           <label for="name">Full Name</label>
-          <input type="text" id="name" name="name" placeholder="John Smith" required>
+          <input type="text" id="name" placeholder="John Smith" required>
         </div>
-        <div class="form-group">
+        <div class="fg">
           <label for="email">Business Email</label>
-          <input type="email" id="email" name="email" placeholder="john@company.com" required>
+          <input type="email" id="email" placeholder="john@company.com" required>
         </div>
-        <div class="form-group">
+        <div class="fg">
           <label for="business">Business Name</label>
-          <input type="text" id="business" name="business" placeholder="Your Business Name">
+          <input type="text" id="business" placeholder="Your Business Name">
         </div>
-        <div class="form-group">
+        <div class="fg">
           <label for="phone">Phone Number</label>
-          <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000">
+          <input type="tel" id="phone" placeholder="+91 98765 43210">
         </div>
         <div class="cta-submit">
-          <button type="submit" class="btn-primary">
+          <button type="submit" class="btn-cta">
             Get Your Free Demo
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
           </button>
         </div>
-        <div class="cta-note">No credit card required · Setup in under 5 minutes · Cancel anytime</div>
+        <div class="cta-note">No credit card required · Setup in 5 minutes · Cancel anytime</div>
       </form>
     </div>
   </div>
 </section>
 
-<!-- ════════ FOOTER ════════ -->
+<!-- FOOTER -->
 <footer class="footer">
   <div class="container">
     <div class="footer-inner">
-      <div class="footer-brand">AutoReply AI</div>
+      <div class="footer-brand">Social Clouds</div>
       <ul class="footer-links">
         <li><a href="#about">About</a></li>
         <li><a href="#features">Features</a></li>
@@ -1509,89 +1656,63 @@ body::before {
         <li><a href="#testimonials">Reviews</a></li>
         <li><a href="#demo">Get Demo</a></li>
       </ul>
-      <div class="footer-copy">&copy; 2026 AutoReply AI. All rights reserved.</div>
+      <div class="footer-copy">&copy; 2026 Social Clouds. All rights reserved.</div>
     </div>
   </div>
 </footer>
 
 <script>
-// ─── Scroll Reveal ───
+// Reveal animations
 const reveals = document.querySelectorAll('.reveal');
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      entry.target.classList.add('visible');
-    }
-  });
+const obs = new IntersectionObserver((entries) => {
+  entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
 }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-reveals.forEach(el => observer.observe(el));
+reveals.forEach(el => obs.observe(el));
 
-// ─── Nav scroll effect ───
+// Nav scroll
 const nav = document.getElementById('nav');
-window.addEventListener('scroll', () => {
-  nav.classList.toggle('scrolled', window.scrollY > 40);
-});
+window.addEventListener('scroll', () => nav.classList.toggle('scrolled', window.scrollY > 40));
 
-// ─── Mobile nav toggle ───
-const navToggle = document.getElementById('navToggle');
-const navLinks = document.getElementById('navLinks');
-navToggle.addEventListener('click', () => {
-  navLinks.classList.toggle('open');
-});
-// Close mobile nav on link click
-navLinks.querySelectorAll('a').forEach(link => {
-  link.addEventListener('click', () => navLinks.classList.remove('open'));
-});
+// Mobile nav
+const toggle = document.getElementById('navToggle');
+const links = document.getElementById('navLinks');
+toggle.addEventListener('click', () => links.classList.toggle('open'));
+links.querySelectorAll('a').forEach(a => a.addEventListener('click', () => links.classList.remove('open')));
 
-// ─── Smooth scroll for anchor links ───
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-  anchor.addEventListener('click', function(e) {
+// Smooth scroll
+document.querySelectorAll('a[href^="#"]').forEach(a => {
+  a.addEventListener('click', function(e) {
     e.preventDefault();
-    const target = document.querySelector(this.getAttribute('href'));
-    if (target) {
-      target.scrollIntoView({ behavior: 'smooth' });
-    }
+    const t = document.querySelector(this.getAttribute('href'));
+    if (t) t.scrollIntoView({ behavior: 'smooth' });
   });
 });
 
-// ─── Form handler ───
+// Form
 function handleSubmit(e) {
   e.preventDefault();
   const btn = e.target.querySelector('button[type="submit"]');
-  const origHTML = btn.innerHTML;
-  btn.innerHTML = '<span style="display:inline-flex;align-items:center;gap:8px;">Sending... <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="animation:spin 1s linear infinite"><path d="M21 12a9 9 0 11-6.219-8.56"/></svg></span>';
+  btn.innerHTML = 'Sending...';
   btn.disabled = true;
   setTimeout(() => {
-    btn.innerHTML = '<span style="display:inline-flex;align-items:center;gap:8px;">Demo Requested! <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>';
-    btn.style.background = '#059669';
-    btn.style.boxShadow = '0 4px 24px rgba(5,150,105,0.3)';
+    btn.innerHTML = 'Demo Requested! ✓';
+    btn.style.background = '#10b981';
+    btn.style.color = '#fff';
   }, 1500);
 }
 </script>
-<style>
-@keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
-</style>
 
-<!-- Schema.org structured data -->
+<!-- Schema.org -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "SoftwareApplication",
-  "name": "AutoReply AI",
+  "name": "Social Clouds",
   "applicationCategory": "BusinessApplication",
   "description": "AI-powered social media automation that instantly responds to comments, messages, and reviews across Facebook, Instagram, YouTube, X, Google My Business and more.",
-  "offers": {
-    "@type": "Offer",
-    "price": "0",
-    "priceCurrency": "USD",
-    "description": "Free Demo Available"
-  },
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "INR", "description": "Free Demo Available" },
   "operatingSystem": "Web",
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "150"
-  }
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "150" }
 }
 </script>
 </body>
